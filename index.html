@@ -19,8 +19,8 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <header class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./src/assets/imgs/logo.png" alt="Logotipo Livraria">
         </a>
@@ -48,120 +48,122 @@
             <button class="btn btn-success" type="submit">Buscar</button>
           </form>
         </div>
-      </div>
+      </header>
     </nav>
 
-    <!-- Carousel-->
-    <div id="carousel-book" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carousel-book" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carousel-book" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carousel-book" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carousel-book" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <main>
+      <!-- Carousel-->
+      <div id="carousel-book" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-book" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel-book" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel-book" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel-book" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./src/assets/imgs/bookshelf1.jpg" class="d-block w-100" alt="Estante de livros">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>A melhor Livraria do Brasil</h5>
+              <p>Você vai ficar encanto com a melhor livraria do País.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./src/assets/imgs/bookshelf2.jpg" class="d-block w-100" alt="Estante de livros">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cada canto da nossa livraria traz uma experiência incrível</h5>
+              <p>Visite nossas lindas estantes e conheça todos os nossos títulos disponíveis na livraria.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./src/assets/imgs/bookshelf3.jpg" class="d-block w-100" alt="Estante de livros">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cada livro, uma nova experiência</h5>
+              <p>Sinta a vontade e leia as sinopses dos livros tranquilamente.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./src/assets/imgs/bookshelf4.jpg" class="d-block w-100" alt="Estante de livros">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Venha conhecer nossa livraria</h5>
+              <p>Traga seus/suas amigos(as) e familiares para conhecer essa maravilhosa livraria.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-book" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-book" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./src/assets/imgs/bookshelf1.jpg" class="d-block w-100" alt="Estante de livros">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>A melhor Livraria do Brasil</h5>
-            <p>Você vai ficar encanto com a melhor livraria do País.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./src/assets/imgs/bookshelf2.jpg" class="d-block w-100" alt="Estante de livros">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Cada canto da nossa livraria traz uma experiência incrível</h5>
-            <p>Visite nossas lindas estantes e conheça todos os nossos títulos disponíveis na livraria.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./src/assets/imgs/bookshelf3.jpg" class="d-block w-100" alt="Estante de livros">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Cada livro, uma nova experiência</h5>
-            <p>Sinta a vontade e leia as sinopses dos livros tranquilamente.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./src/assets/imgs/bookshelf4.jpg" class="d-block w-100" alt="Estante de livros">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Venha conhecer nossa livraria</h5>
-            <p>Traga seus/suas amigos(as) e familiares para conhecer essa maravilhosa livraria.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-book" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel-book" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
-    <!-- Quote -->
-    <figure>
-      <blockquote class="blockquote">
-        <h3 class="fw-lighter text-center fst-italic mt-5">
-          "Como é adorável passar a tarde assim! Garanto que não há nada mais divertido que ler!
-          Tudo cansa, menos um livro! Quando tiver a minha própria casa, não serei feliz até ter
-          uma excelente biblioteca!"
-        </h3>
-      </blockquote>
-      <figcaption class="blockquote-footer text-center">
-        <cite title="Source Title">Orgulho e Preconceito, Jane Austen</cite>
-      </figcaption>
-    </figure>
+      <!-- Quote -->
+      <figure>
+        <blockquote class="blockquote">
+          <h3 class="fw-lighter text-center fst-italic mt-5">
+            "Como é adorável passar a tarde assim! Garanto que não há nada mais divertido que ler!
+            Tudo cansa, menos um livro! Quando tiver a minha própria casa, não serei feliz até ter
+            uma excelente biblioteca!"
+          </h3>
+        </blockquote>
+        <figcaption class="blockquote-footer text-center">
+          <cite title="Source Title">Orgulho e Preconceito, Jane Austen</cite>
+        </figcaption>
+      </figure>
 
-    <!-- About cards-->
-    <section id="about" class="container text-center mt-5">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./src/assets/imgs/books1.jpg" class="img-fluid rounded-start" alt="Prateleira de livros">
+      <!-- About cards-->
+      <section id="about" class="container text-center mt-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./src/assets/imgs/books1.jpg" class="img-fluid rounded-start" alt="Prateleira de livros">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">A leitura transforma o mundo!</h5>
+                    <h6 class="card-subtitle text-muted mb-3">A leitura é uma dádiva de aprendizado.</h6>
+                    <p class="card-text">
+                    <blockquote class="blockquote fw-lighter fst-italic">
+                      "As pessoas não compreendem como toda a vida de um homem pode ser mudada por um único livro."
+                    </blockquote>
+                    <cite class="Source Title">Malcolm X</cite>
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">A leitura transforma o mundo!</h5>
-                  <h6 class="card-subtitle text-muted mb-3">A leitura é uma dádiva de aprendizado.</h6>
-                  <p class="card-text">
-                  <blockquote class="blockquote fw-lighter fst-italic">
-                    "As pessoas não compreendem como toda a vida de um homem pode ser mudada por um único livro."
-                  </blockquote>
-                  <cite class="Source Title">Malcolm X</cite>
-                  </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./src/assets/imgs/books2.jpg" class="img-fluid rounded-start"
+                    alt="Livros empilhados em forma de árvore">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Somos apaixonados por livros!</h5>
+                    <h6 class="card-subtitle text-muted mb-3">Ler é viver!</h6>
+                    <p class="card-text">
+                    <blockquote class="blockquote fw-lighter fst-italic">
+                      "Um leitor vive mil vidas antes de morrer. O homem que nunca lê vive apenas uma."
+                    </blockquote>
+                    <cite class="Source Title">George R. R. Martin</cite>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./src/assets/imgs/books2.jpg" class="img-fluid rounded-start"
-                  alt="Livros empilhados em forma de árvore">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Somos apaixonados por livros!</h5>
-                  <h6 class="card-subtitle text-muted mb-3">Ler é viver!</h6>
-                  <p class="card-text">
-                  <blockquote class="blockquote fw-lighter fst-italic">
-                    "Um leitor vive mil vidas antes de morrer. O homem que nunca lê vive apenas uma."
-                  </blockquote>
-                  <cite class="Source Title">George R. R. Martin</cite>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- cdn Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
