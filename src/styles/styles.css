@@ -19,3 +19,8 @@
    background: linear-gradient(transparent, rgb(31, 31, 31));
    position: absolute;
 }
+
+figure {
+   width: 60%;
+   margin: auto;
+}
