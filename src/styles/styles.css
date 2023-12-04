@@ -28,3 +28,8 @@ figure {
    width: 80%;
    margin: auto;
 }
+
+.card-menu img {
+   height: 300px;
+   object-fit: cover;
+}
